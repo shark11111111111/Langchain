@@ -1,0 +1,39 @@
+# RAG Chatbot using LangChain & Gemini
+
+This project is a Retrieval-Augmented Generation (RAG) chatbot that answers
+user queries based strictly on retrieved document context.
+
+## Features
+- Document ingestion from web sources
+- Vector embedding using Google Generative AI
+- Persistent vector storage with Chroma
+- Context-aware question answering using RAG
+- Conversation history support
+- Streamlit-based chat interface
+- Text-to-speech output
+
+## Tech Stack
+- Python
+- LangChain
+- Google Gemini (gemini-1.5-flash)
+- Google Generative AI Embeddings
+- Chroma Vector Database
+- Streamlit
+
+## How It Works
+1. Documents are loaded and embedded using Google embeddings
+2. Embeddings are stored in a persistent Chroma vector database
+3. Relevant context is retrieved using vector similarity
+4. Retrieved context + chat history is passed to the LLM
+5. LLM generates grounded responses, avoiding hallucinations
+
+## Use Case
+- Website Q&A
+- Internal knowledge assistant
+- Context-aware AI chatbot
+
+## Future Improvements
+- Source citation in responses
+- Multi-URL document ingestion
+- Authentication
+- Evaluation metrics
