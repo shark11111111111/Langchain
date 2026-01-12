@@ -61,7 +61,7 @@ prompt=PromptTemplate(
     """,
     input_variables={'context','Question','chat_hist'}
 )
-st.title("🤖BOT")
+st.title("BOT")
 
 chain=prompt | model | parser
 
