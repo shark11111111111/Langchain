@@ -1,0 +1,45 @@
+# Dynamic RAG Chatbot using LangChain & Gemini
+
+This project implements a dynamic Retrieval-Augmented Generation (RAG)
+chatbot that ingests live web content and answers user queries based
+strictly on retrieved document context.
+
+## Key Features
+- Dynamic URL-based document ingestion
+- Web content loading and chunking
+- Embedding generation using HuggingFace transformers
+- Persistent vector storage using Chroma DB
+- Context-aware LLM responses using Google Gemini
+- Conversation history support
+- Streamlit-based interactive UI
+- Text-to-speech output
+- Runtime vector store creation and deletion
+
+## Tech Stack
+- Python
+- LangChain
+- Google Gemini (gemini-1.5-flash)
+- HuggingFace Embeddings
+- Chroma Vector Database
+- Streamlit
+- Multiprocessing & Threading
+
+## How It Works
+1. User provides a URL
+2. Web content is loaded and embedded
+3. Embeddings are stored in a persistent vector database
+4. Relevant context is retrieved using similarity search
+5. Chat history + retrieved context are passed to the LLM
+6. LLM generates grounded, context-aware responses
+
+## Use Cases
+- Website Q&A assistant
+- Internal knowledge bots
+- Research assistants
+- Support chatbots
+
+## Future Enhancements
+- Source citation
+- Multi-URL ingestion
+- Authentication
+- Evaluation metrics
